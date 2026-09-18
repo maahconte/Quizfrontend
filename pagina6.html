@@ -16,11 +16,11 @@
 <div class="progress-fill" style="width:100%;"></div>
 </div>
 <div class="card-kahoot">
-<h2 class="pergunta-titulo"><Q>Qual linguaguem é responsável por definir a esrutura d uma pagina web?</Q> &lt;img&gt;?</h2>
+<h2 class="pergunta-titulo"><Q>Qual linguaguem é responsável por definir a estrutura de uma pagina web?</Q></h2>
 <div class="answers-grid">
-<button class="answer-btn btn-vermelho" onclick="responder('errada')"><span class="answer-shape">▲</span>Linguagem de programção usada para desenvovler sistemas, aplicações, automações e análises de dados.</button>
-<button class="answer-btn btn-azul" onclick="responder('errada')"><span class="answer-shape">◆</span>Linguagem usada para definir o visual e o esilo de uma página, como cores, fontes e tamanhos.</button>
-<button class="answer-btn btn-amarelo" onclick="responder('errada')"><span class="answer-shape">●</span>Linguagem de programção usada para adicionar interatividade e funcionalidades ás paginas web.</button>
+<button class="answer-btn btn-vermelho" onclick="responder('errada')"><span class="answer-shape">▲</span>CSS</button>
+<button class="answer-btn btn-azul" onclick="responder('errada')"><span class="answer-shape">◆</span>JavaScript</button>
+<button class="answer-btn btn-amarelo" onclick="responder('errada')"><span class="answer-shape">●</span>Python</button>
 <button class="answer-btn btn-verde" onclick="responder('certa')"><span class="answer-shape">■</span>HTML</button>
 </div>
 </div>
@@ -28,11 +28,11 @@
 <script>
 function responder(tipo){
 if(tipo === 'certa'){
-window.location.href = 'resultado.html';
+window.location.href = 'pagina7.html';
 } else {
 var atual = parseInt(localStorage.getItem('erros') || '0');
 localStorage.setItem('erros', atual + 1);
-window.location.href = 'explicacao5.html';
+window.location.href = 'explicacao6.html';
 }
 }
 </script>
