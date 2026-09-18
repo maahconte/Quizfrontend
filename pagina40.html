@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pergunta 40</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container-kahoot">
+        <div class="top-bar">
+            <span class="badge-pergunta">Pergunta 40 de 40</span>
+            <span class="badge-pergunta">⏱️ Frontend</span>
+        </div>
+        <div class="progress-track">
+            <div class="progress-fill" style="width:100%;"></div>
+        </div>
+        <div class="card-kahoot">
+            <h2 class="pergunta-titulo"><Q>Qual é a tag usada para dividir um conteúdo em blocos?</Q></h2>
+            <div class="answers-grid">
+                <button class="answer-btn btn-vermelho" onclick="responder('errada')"><span
+                        class="answer-shape">▲</span>em</button>
+                <button class="answer-btn btn-azul" onclick="responder('errada')"><span
+                        class="answer-shape">◆</span>br</button>
+                <button class="answer-btn btn-amarelo" onclick="responder('errada')"><span
+                        class="answer-shape">●</span>section</button>
+                <button class="answer-btn btn-verde" onclick="responder('certa')"><span
+                        class="answer-shape">■</span>div</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        function responder(tipo) {
+            if (tipo === 'certa') {
+                window.location.href = 'resultado.html';
+            } else {
+                var atual = parseInt(localStorage.getItem('erros') || '0');
+                localStorage.setItem('erros', atual + 1);
+                window.location.href = 'explicacao40.html';
+            }
+        }
+    </script>
+</body>
+
+</html>
